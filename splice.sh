@@ -2,7 +2,7 @@
 
 
 # Create list of all clips to splice
-ls -1 staging | sed 's/^/file /' >> clips.txt
+ls -1 staging | sed 's/^/file /' > clips.txt
 
 # Put list in staging directory so it is properly wiped on new splice
 mv clips.txt staging
